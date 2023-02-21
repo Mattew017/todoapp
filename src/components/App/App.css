@@ -1,0 +1,27 @@
+
+.row {
+    display: flex;
+  }
+  
+  .row > div {
+    flex: 1;
+    background: rgb(237, 234, 234);
+    border: 1px solid rgb(12, 52, 77);
+  }
+
+.text{
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.priority{
+    color: rgb(66, 70, 5);
+}
+
+.date{
+    color: forestgreen;
+}
+
+.status{
+    cursor: pointer;
+}
