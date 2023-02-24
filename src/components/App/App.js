@@ -58,17 +58,17 @@ function App() {
               todos.map(todo => {
                 return(
                   <li className="" key={todo.id}>
-                    <div className="text">{todo.text}</div>
-                    <div className="priority">
-                    <u>Приоритет:</u> {todo.type}
-                    </div>
-                    <div className="date">
-                    <u>Дедлайн:</u> {todo.date}
-                    </div>
-                    <div className="status" onClick={() => ToggleStatus(todo.id)}>
-                    <u>Статус:</u> {todo.status}
-                    </div>
-                  </li>
+                  <div className="text">{todo.text}</div>
+                  <div className="priority">
+                  <u>Приоритет:</u> <span className={todo.type === "Обычный" ? "default": "urgent"}>{todo.type}</span>
+                  </div>
+                  <div className="date">
+                  <u>Дедлайн:</u> {todo.date}
+                  </div>
+                  <div className="status" onClick={() => ToggleStatus(todo.id)}>
+                  <u>Статус:</u> <span className={todo.status === "Завершено" ? "done": "undone"}>{todo.status}</span>
+                  </div>
+                </li>
                   
                 )
               })
@@ -82,17 +82,17 @@ function App() {
                 if (todo.status === "Не завершено" & todo.type === "Срочный") {
                   return(
                     <li className="" key={todo.id}>
-                      <div className="text">{todo.text}</div>
-                      <div className="priority">
-                      <u>Приоритет:</u> {todo.type}
-                      </div>
-                      <div className="date">
-                      <u>Дедлайн:</u> {todo.date}
-                      </div>
-                      <div className="status" onClick={() => ToggleStatus(todo.id)}>
-                      <u>Статус:</u> {todo.status}
-                      </div>
-                    </li>
+                    <div className="text">{todo.text}</div>
+                    <div className="priority">
+                    <u>Приоритет:</u> <span className={todo.type === "Обычный" ? "default": "urgent"}>{todo.type}</span>
+                    </div>
+                    <div className="date">
+                    <u>Дедлайн:</u> {todo.date}
+                    </div>
+                    <div className="status" onClick={() => ToggleStatus(todo.id)}>
+                    <u>Статус:</u> <span className={todo.status === "Завершено" ? "done": "undone"}>{todo.status}</span>
+                    </div>
+                  </li>
                     
                   )       
                 }
@@ -110,13 +110,13 @@ function App() {
                     <li className="" key={todo.id}>
                       <div className="text">{todo.text}</div>
                       <div className="priority">
-                      <u>Приоритет:</u> {todo.type}
+                      <u>Приоритет:</u> <span className={todo.type === "Обычный" ? "default": "urgent"}>{todo.type}</span>
                       </div>
                       <div className="date">
                       <u>Дедлайн:</u> {todo.date}
                       </div>
                       <div className="status" onClick={() => ToggleStatus(todo.id)}>
-                      <u>Статус:</u> {todo.status}
+                      <u>Статус:</u> <span className={todo.status === "Завершено" ? "done": "undone"}>{todo.status}</span>
                       </div>
                     </li>
                     

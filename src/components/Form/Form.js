@@ -13,12 +13,13 @@ const Forma = (props) => {
         }}>
             <input
              type="text"
-             placeholder="Введите задачу..."
+             placeholder="Введите описание задачи..."
              className="input"
+             size="100"
              value={value}
              onChange={e => setValue(e.target.value)}
             />
-            <div className="mb-0">
+            <div className="m-3">
                 <input
                 type="radio" id="urgent"
                 name="contact" value="urgent"

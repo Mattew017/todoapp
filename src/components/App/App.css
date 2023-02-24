@@ -25,3 +25,33 @@
 .status{
     cursor: pointer;
 }
+
+
+.undone{
+    color: #9b740a;
+    font-weight: 200;
+}
+
+.done {
+    color: #0debc6;
+    font-weight: bold;
+}
+
+.urgent{
+    color: #d41411e8;
+    font-weight: 800;
+}
+
+.default{
+    color: #141661;
+    font-weight: 500;
+}
+
+li {
+    font-size: larger;
+}
+
+.undone:hover{
+    border-radius: 5px;
+    background: #91d1e8;
+}
